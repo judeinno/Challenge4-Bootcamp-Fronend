@@ -1,3 +1,9 @@
+[![Build Status](https://travis-ci.org/judeinno/Challenge4-Bootcamp-Fronend.svg?branch=develop)](https://travis-ci.org/judeinno/Challenge4-Bootcamp-Fronend)
+
+[![Coverage Status](https://coveralls.io/repos/github/judeinno/Challenge4-Bootcamp-Fronend/badge.svg?branch=develop)](https://coveralls.io/github/judeinno/Challenge4-Bootcamp-Fronend?branch=develop)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/0b8a146ac6891649f4ac/maintainability)](https://codeclimate.com/github/judeinno/Challenge4-Bootcamp-Fronend/maintainability)
+
 # Challenge4-LMS-8.1
 
 # StackOverFlow-lite
