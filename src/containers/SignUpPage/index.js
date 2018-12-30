@@ -13,11 +13,11 @@ class SignUpPage extends Component {
 }
 
 SignUpPage.propTypes = {
-    textmessage: PropTypes.string.isRequired,
+  textmessage: PropTypes.string.isRequired,
 };
 
 const mapStateToProps = ({ signupReducer }) => ({
-    textmessage: signupReducer.textmessage,
+  textmessage: signupReducer.textmessage,
 });
 
 export default connect(mapStateToProps)(SignUpPage);

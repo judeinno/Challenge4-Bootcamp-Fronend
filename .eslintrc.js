@@ -26,5 +26,11 @@ module.exports = {
       "no-shadow": "warn",
       "import/no-named-as-default": ['off'],
       "react/no-array-index-key":['off']
+    },
+    globals: {
+      page: true,
+      browser: true,
+      context: true,
+      jestPuppeteer: true,
     }
   };
