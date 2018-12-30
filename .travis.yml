@@ -2,9 +2,14 @@ language: node_js
 node_js:
   - "lts/*"
 
-install:
-  - npm install
+cache:
+  directories:
+    - node_modules
 
-scripts:
-  - npm test --coverage
+script:
+  - npm install coveralls
+  - jest --maxWorkers=2
+  - npm test -- -u --coverage
   
+after_success:
+  - npm run coveralls

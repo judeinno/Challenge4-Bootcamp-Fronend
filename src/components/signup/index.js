@@ -9,7 +9,7 @@ const SignUp = ({ textmessage }) => (
 );
 
 SignUp.propTypes = {
-    textmessage: PropTypes.string.isRequired,
+  textmessage: PropTypes.string.isRequired,
 };
 
 export default SignUp;

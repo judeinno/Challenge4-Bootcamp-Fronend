@@ -9,7 +9,7 @@ import Home from '../Home';
 const App = () => (
   <Router history={history}>
     <React.Fragment>
-      <Header />
+      <Header history={history} />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/login" component={LoginPage} />
