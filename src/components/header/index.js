@@ -1,15 +1,46 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import './header.scss';
 
 const Header = () => (
   <div>
-    <nav className="nav">
-      <NavLink className="nav-link active" to="/">Home</NavLink>
-      <NavLink className="nav-link active" to="/login">Login</NavLink>
-      <NavLink className="nav-link" to="/signup">Sign Up</NavLink>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light nav">
+      <a className="navbar-brand logo" href="/">
+      Stark Over Flow Lite
+      </a>
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon" />
+      </button>
+
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item active">
+            <a className="nav-link" href="/">
+              Home
+              <span className="sr-only">(current)</span>
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/login">
+            Login
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/signup">
+            Sign Up
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </div>
 );
-
 
 export default Header;

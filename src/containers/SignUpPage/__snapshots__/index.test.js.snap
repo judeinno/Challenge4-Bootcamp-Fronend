@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SignUpPage /> should render the component 1`] = `
+<Connect(SignUpPage)
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <SignUpPage
+    signupReducer={
+      Object {
+        "signupPostData": Object {
+          "Password": "password",
+          "username": "Jude",
+        },
+      }
+    }
+    signupUser={[Function]}
+    signupUserData={[Function]}
+    store={
+      Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      }
+    }
+    storeSubscription={
+      Subscription {
+        "listeners": Object {
+          "clear": [Function],
+          "get": [Function],
+          "notify": [Function],
+          "subscribe": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "unsubscribe": [Function],
+      }
+    }
+  >
+    <SignUp
+      onChange={[Function]}
+      onClick={[Function]}
+    >
+      <div
+        className="container signup"
+      >
+        <form
+          className="signup-form"
+        >
+          <legend>
+            Register
+          </legend>
+          <hr />
+          <div
+            className="form-group"
+          >
+            <p>
+              Username:
+            </p>
+            <input
+              className="form-control"
+              id="user-name"
+              name="username"
+              onChange={[Function]}
+              placeholder="User Name"
+              type="test"
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <p>
+              Email:
+            </p>
+            <input
+              aria-describedby="emailHelp"
+              className="form-control"
+              id="exampleInputEmail1"
+              name="email"
+              onChange={[Function]}
+              placeholder="Enter email"
+              type="email"
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <p>
+              Password:
+            </p>
+            <input
+              className="form-control"
+              id="exampleInputPassword1"
+              name="password"
+              onChange={[Function]}
+              placeholder="Password"
+              type="password"
+            />
+          </div>
+          <button
+            className="btn btn-primary"
+            id="sign-up-bt"
+            onClick={[Function]}
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </SignUp>
+  </SignUpPage>
+</Connect(SignUpPage)>
+`;
