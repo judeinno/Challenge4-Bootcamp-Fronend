@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Footer 1`] = `
+<div
+  className="card text-center footer"
+>
+  <div
+    className="card-body"
+  >
+    <h5
+      className="card-title"
+    >
+      StackOverFlow-lite, Ask anything!
+    </h5>
+    <p
+      className="card-text"
+    >
+      2018 StackOverFlow-lite
+    </p>
+    <a
+      className="btn btn-primary"
+      href="/"
+    >
+      About Us
+    </a>
+  </div>
+</div>
+`;

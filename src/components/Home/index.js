@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Login = () => (
+const Home = () => (
   <div>
     <h1>Welcome to Stark Over flow</h1>
   </div>
 );
 
-export default Login;
+export default Home;

@@ -5,6 +5,7 @@ import LoginPage from '../../containers/LoginPage';
 import SignUpPage from '../../containers/SignUpPage';
 import Header from '../header';
 import Home from '../Home';
+import Footer from '../Footer';
 
 const App = () => (
   <Router history={history}>
@@ -12,9 +13,10 @@ const App = () => (
       <Header history={history} />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/login" component={LoginPage} />
-        <Route exact path="/signup" component={SignUpPage} />
+        <Route path="/login" component={LoginPage} />
+        <Route path="/signup" component={SignUpPage} />
       </Switch>
+      <Footer />
     </React.Fragment>
   </Router>
 );

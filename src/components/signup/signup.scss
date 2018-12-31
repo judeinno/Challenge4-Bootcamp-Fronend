@@ -1,35 +1,12 @@
-$navy: #001e38;
-$green: #15b78f;
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
-html {
-  background-color: $navy;
-}
-
-body {
-  align-items: center;
-  display: flex;
-  font-family: monospace;
-  height: 100vh;
-  justify-content: center;
-  margin: 0;
-  width: 100vw;
-}
-
-h1 {
-  color: $green;
-  font-size: 3.5rem;
-  font-weight: bold;
-
-  &::after {
-    content: "👋";
-    display: inline-block;
-    transform: rotate(-20deg);
-    animation: wave 0.75s infinite linear alternate;
-  }
-}
-
-@keyframes wave {
-  100% {
-    transform: rotate(50deg);
-  }
+.signup-form {
+    font-family: "Roboto Condensed", sans-serif;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 80px;
+    align-content: center;
+    legend {
+        font-size: 30px;
+    }
 }
