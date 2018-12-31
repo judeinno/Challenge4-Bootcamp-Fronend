@@ -8,6 +8,12 @@ const swalMessages = {
     type: 'success',
     confirmButtonText: 'continue',
   },
+  LOGIN_SUCCESSFUL: {
+    title: 'Login Successful',
+    text: 'You have successfully logged in.',
+    type: 'success',
+    confirmButtonText: 'continue',
+  },
 
   REGISTRATION_ERROR: {
     title: 'Unable to complete registration',

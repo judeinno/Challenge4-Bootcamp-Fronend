@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoginPage /> should render the component 1`] = `
+<Connect(LoginPage)
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <LoginPage
+    loginReducer={
+      Object {
+        "loginPostData": Object {
+          "Password": "password",
+          "username": "Jude",
+        },
+      }
+    }
+    loginUser={[Function]}
+    loginUserData={[Function]}
+    store={
+      Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      }
+    }
+    storeSubscription={
+      Subscription {
+        "listeners": Object {
+          "clear": [Function],
+          "get": [Function],
+          "notify": [Function],
+          "subscribe": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "unsubscribe": [Function],
+      }
+    }
+  >
+    <Login
+      onChange={[Function]}
+      onClick={[Function]}
+    >
+      <div
+        className="container signup"
+      >
+        <form
+          className="signup-form"
+        >
+          <legend>
+            Register
+          </legend>
+          <hr />
+          <div
+            className="form-group"
+          >
+            <p>
+              Username:
+            </p>
+            <input
+              className="form-control"
+              id="user-name"
+              name="username"
+              onChange={[Function]}
+              placeholder="User Name"
+              type="test"
+            />
+          </div>
+          <div
+            className="form-group"
+          >
+            <p>
+              Password:
+            </p>
+            <input
+              className="form-control"
+              id="exampleInputPassword1"
+              name="password"
+              onChange={[Function]}
+              placeholder="Password"
+              type="password"
+            />
+          </div>
+          <button
+            className="btn btn-primary"
+            id="sign-up-bt"
+            onClick={[Function]}
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </Login>
+  </LoginPage>
+</Connect(LoginPage)>
+`;

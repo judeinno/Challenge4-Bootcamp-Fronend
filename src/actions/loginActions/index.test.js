@@ -2,12 +2,12 @@ import moxios from 'moxios';
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import {
-  signupSuccess, signupThunk,
+  loginSuccess, loginThunk,
 } from './index';
 import ACTION_TYPE from '../actionTypes';
 
 
-describe('Sign uo Actions tests', () => {
+describe('Login  Actions tests', () => {
   let store;
   let actionTypesData;
   let response;
@@ -26,36 +26,37 @@ describe('Sign uo Actions tests', () => {
     // import and pass your custom axios instance to this method
     moxios.uninstall();
   });
-  test('Successful signup action', () => {
-    expect(signupSuccess(response)).toEqual(expect.objectContaining(
-      actionTypesData(ACTION_TYPE.USER_SIGNUP_SUCCESS),
+  test('Successful login action', () => {
+    expect(loginSuccess(response)).toEqual(expect.objectContaining(
+      actionTypesData(ACTION_TYPE.USER_LOGIN_SUCCESS),
     ));
   });
-  test('sign up successfull', () => {
-    moxios.stubRequest('https://stackoverflow-lite-challenge-3.herokuapp.com/api/v1/auth/signup', {
+  test('Login successfull', () => {
+    moxios.stubRequest('https://stackoverflow-lite-challenge-3.herokuapp.com/api/v1/auth/login', {
       status: 200,
       response: { message: 'ok' },
     });
-    store.dispatch(signupThunk()).then(() => {
+    store.dispatch(loginThunk()).then(() => {
       expect(store.getActions()).toEqual(expect.objectContaining(
         {
-          type: ACTION_TYPE.USER_SIGNUP_SUCCESS,
+          type: ACTION_TYPE.USER_LOGIN_SUCCESS,
           payload: { message: 'ok' },
         },
       ));
     });
   });
   test('Login successfull', () => {
-    moxios.stubRequest('https://stackoverflow-lite-challenge-3.herokuapp.com/api/v1/auth/signup', {
+    moxios.stubRequest('https://stackoverflow-lite-challenge-3.herokuapp.com/api/v1/auth/login', {
       status: 400,
       responseText: { error: 'ok' },
     });
-    store.dispatch(signupThunk()).then(() => {
+    store.dispatch(loginThunk()).then(() => {
       expect(store.getActions()).toEqual(expect.objectContaining(
         [{
-          type: ACTION_TYPE.USER_SIGNUP_FAILED,
+          type: ACTION_TYPE.USER_LOGIN_FAILED,
         }],
       ));
     });
   });
 });
+

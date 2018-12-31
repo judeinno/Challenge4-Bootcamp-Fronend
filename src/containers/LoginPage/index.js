@@ -1,23 +1,48 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import * as PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { loginData, loginThunk } from '../../actions/loginActions';
 import Login from '../../components/login';
 
 class LoginPage extends Component {
+  handleChange = (event) => {
+    event.preventDefault();
+    const { loginUserData, loginReducer } = this.props;
+    loginUserData({
+      ...loginReducer.loginPostData,
+      [event.target.name]: event.target.value,
+    });
+  };
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+    const { loginUser, loginReducer } = this.props;
+    loginUser(loginReducer.loginPostData);
+  }
+
   render() {
-    const { message } = this.props;
     return (
-      <Login message={message} />
+      <Login
+        onChange={this.handleChange}
+        onClick={this.handleSubmit}
+      />
     );
   }
 }
 
 LoginPage.propTypes = {
-  message: PropTypes.string.isRequired,
+  loginUser: PropTypes.func.isRequired,
+  loginUserData: PropTypes.func.isRequired,
+  loginReducer: PropTypes.shape({}).isRequired,
 };
 
 const mapStateToProps = ({ loginReducer }) => ({
-  message: loginReducer.message,
+  loginReducer,
 });
 
-export default connect(mapStateToProps)(LoginPage);
+export const mapDispatchToProps = dispatch => ({
+  loginUser: response => dispatch(loginThunk(response)),
+  loginUserData: response => dispatch(loginData(response)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(LoginPage);
