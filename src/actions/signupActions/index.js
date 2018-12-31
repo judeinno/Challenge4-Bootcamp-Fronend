@@ -24,11 +24,9 @@ export const signupThunk = data => (dispatch) => {
   return axios.post(url, userdata)
     .then((res) => {
       const resData = res.data.message;
-      console.log('>>>>>>>>>>>>>>>>>>>', res);
       dispatch(signupSuccess(resData));
     }).catch((error) => {
       const errorData = error.response.data;
-      console.log('>>>>>>>>>>>>>>>>>>>', errorData);
       dispatch(signupFailure(errorData));
     });
 };

@@ -2,14 +2,43 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './login.scss';
 
-const Login = ({ message }) => (
-  <div>
-    <h1>{message}</h1>
+const Login = ({ onChange, onClick }) => (
+  <div className="container signup">
+    <form className="signup-form">
+      <legend>Register</legend>
+      <hr />
+      <div className="form-group">
+        <p>Username:</p>
+        <input
+          type="test"
+          className="form-control"
+          id="user-name"
+          placeholder="User Name"
+          name="username"
+          onChange={onChange}
+        />
+      </div>
+      <div className="form-group">
+        <p>Password:</p>
+        <input
+          type="password"
+          className="form-control"
+          id="exampleInputPassword1"
+          name="password"
+          placeholder="Password"
+          onChange={onChange}
+        />
+      </div>
+      <button type="submit" id="sign-up-bt" className="btn btn-primary" onClick={onClick}>
+        Submit
+      </button>
+    </form>
   </div>
 );
 
 Login.propTypes = {
-  message: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default Login;

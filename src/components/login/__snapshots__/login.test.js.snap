@@ -1,7 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`testing login 1`] = `
-<div>
-  <h1 />
+<div
+  className="container signup"
+>
+  <form
+    className="signup-form"
+  >
+    <legend>
+      Register
+    </legend>
+    <hr />
+    <div
+      className="form-group"
+    >
+      <p>
+        Username:
+      </p>
+      <input
+        className="form-control"
+        id="user-name"
+        name="username"
+        placeholder="User Name"
+        type="test"
+      />
+    </div>
+    <div
+      className="form-group"
+    >
+      <p>
+        Password:
+      </p>
+      <input
+        className="form-control"
+        id="exampleInputPassword1"
+        name="password"
+        placeholder="Password"
+        type="password"
+      />
+    </div>
+    <button
+      className="btn btn-primary"
+      id="sign-up-bt"
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
 </div>
 `;
