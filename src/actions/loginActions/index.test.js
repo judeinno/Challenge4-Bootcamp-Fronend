@@ -26,11 +26,6 @@ describe('Login  Actions tests', () => {
     // import and pass your custom axios instance to this method
     moxios.uninstall();
   });
-  test('Successful login action', () => {
-    expect(loginSuccess(response)).toEqual(expect.objectContaining(
-      actionTypesData(ACTION_TYPE.USER_LOGIN_SUCCESS),
-    ));
-  });
   test('Login successfull', () => {
     moxios.stubRequest('https://stackoverflow-lite-challenge-3.herokuapp.com/api/v1/auth/login', {
       status: 200,
@@ -44,6 +39,11 @@ describe('Login  Actions tests', () => {
         },
       ));
     });
+  });
+  test('Successful login action', () => {
+    expect(loginSuccess(response)).toEqual(expect.objectContaining(
+      actionTypesData(ACTION_TYPE.USER_LOGIN_SUCCESS),
+    ));
   });
   test('Login successfull', () => {
     moxios.stubRequest('https://stackoverflow-lite-challenge-3.herokuapp.com/api/v1/auth/login', {

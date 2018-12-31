@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import './login.scss';
 
 const Login = ({ onChange, onClick }) => (
-  <div className="container signup">
-    <form className="signup-form">
-      <legend>Register</legend>
+  <div className="container login">
+    <form className="login-form">
+      <legend>Login</legend>
       <hr />
       <div className="form-group">
         <p>Username:</p>
