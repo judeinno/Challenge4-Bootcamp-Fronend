@@ -2,13 +2,13 @@
 
 exports[`testing login 1`] = `
 <div
-  className="container signup"
+  className="container login"
 >
   <form
-    className="signup-form"
+    className="login-form"
   >
     <legend>
-      Register
+      Login
     </legend>
     <hr />
     <div

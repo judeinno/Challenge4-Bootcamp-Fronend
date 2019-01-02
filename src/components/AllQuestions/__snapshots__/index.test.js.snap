@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing QuestionsDisplay 1`] = `
+<div
+  className="container question-card"
+>
+  <div
+    className="card"
+  >
+    <div
+      className="card-body"
+    >
+      <p
+        className="card-text"
+      />
+      <a
+        className="btn btn-primary"
+        href="#"
+      >
+        More
+      </a>
+    </div>
+  </div>
+</div>
+`;

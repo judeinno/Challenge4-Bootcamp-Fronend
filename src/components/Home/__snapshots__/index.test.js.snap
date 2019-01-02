@@ -1,9 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`testing Home 1`] = `
-<div>
-  <h1>
-    Welcome to Stark Over flow
-  </h1>
-</div>
+<BrowserRouter>
+  <div
+    className="container home"
+  >
+    <h3>
+      Questions
+    </h3>
+    <Route
+      component={[Function]}
+      path="/"
+    />
+  </div>
+</BrowserRouter>
 `;
