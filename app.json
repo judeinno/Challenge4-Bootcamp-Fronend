@@ -1,0 +1,24 @@
+{
+  "name": "Challenge4-Bootcamp-Fronend",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "stack": "heroku-18",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/hone/heroku-buildpack-static"
+    }
+  ]
+}
