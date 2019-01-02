@@ -9,7 +9,7 @@ const loginReducer = (state = initalState, action) => {
   switch (action.type) {
     case ACTION_TYPE.USER_LOGIN_SUCCESS:
       swal({ ...swalMessages.LOGIN_SUCCESSFUL });
-      setTimeout(() => window.location.replace('/home'), 2500);
+      setTimeout(() => window.location.replace('/'), 2500);
       return { ...state, loginPost: action.payload };
 
     case ACTION_TYPE.USER_LOGIN_FAILED:

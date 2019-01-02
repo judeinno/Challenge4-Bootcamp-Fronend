@@ -5,6 +5,7 @@ import signupReducer from './signupReducer';
 const initialState = {
   loginReducer: {},
   signupReducer: {},
+  questionsReducer: {},
 };
 
 describe('post reducer', () => {

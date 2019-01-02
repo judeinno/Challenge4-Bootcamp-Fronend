@@ -61,13 +61,13 @@ exports[`<LoginPage /> should render the component 1`] = `
       onClick={[Function]}
     >
       <div
-        className="container signup"
+        className="container login"
       >
         <form
-          className="signup-form"
+          className="login-form"
         >
           <legend>
-            Register
+            Login
           </legend>
           <hr />
           <div
